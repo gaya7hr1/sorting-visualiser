@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script type="module" src="sorting.js"></script>
+    <div class="header">
+
+    <h1>Sorting Algorithm Visualizer</h1>
+    <img class="gif-head" src="./assests/cat.gif" alt="a cute gif"/>
+
+    </div>
+    <div class="menu-container">
+        <label for="size-slider">Array Size: <span id="size-value">15</span></label>
+       
+        <input type="range" id="size-slider" min="3" max="30" value="15">
+        <label>Min:</label>
+        <input type="number" id="min-input" value="5">
+        
+        <label>Max:</label>
+        <input type="number" id="max-input" value="50">
+        <button id="start-btn">Start Sorting</button>
+
+    </div>
+    <div id="graph-container">
+
+
+    </div>
+   
+</body>
+</html>

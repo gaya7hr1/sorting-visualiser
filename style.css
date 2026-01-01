@@ -58,16 +58,15 @@ h1{
     display: flex;
     align-items: flex-end; 
     justify-content: center;
-    height: 300px;
-    gap: 2px;
-    background-color: #f3f4f6;
-    padding: 10px;
-    border-radius: 8px;
+    height: 300px;        
+    gap: 4px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
 }
 
 .bar {
-    width: 20px;
-    background-color: pink;
-    border-radius: 2px 2px 0 0;
+    background-color: #3498db;
+    width: 30px;
     transition: height 0.2s ease; 
 }

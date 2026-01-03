@@ -28,13 +28,19 @@ h1{
   justify-content:space-between;
   padding: 20px;
 }
+.menu-button{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 30px;
+}
 .controls {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
-#start-btn{
+#start-btn {
    
   font-size: 16px;
   margin: 30px 2px;
@@ -45,7 +51,20 @@ h1{
   border: none;
   color:pink;
   background-color:skyblue;
+  
 }
+#mix-btn{
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family :"Courier New", monospace;
+  padding: 15px 32px;
+  border: none;
+  color:pink;
+  background-color:skyblue;
+ }
+
 #size-value {
     font-weight: bold;
     color: pink;
@@ -69,4 +88,12 @@ h1{
     background-color: #3498db;
     width: 30px;
     transition: height 0.2s ease; 
+    
 }
+.active{
+  background-color:pink;
+}
+.selected{
+  background-color:red;
+}
+

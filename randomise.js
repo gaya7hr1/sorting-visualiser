@@ -15,8 +15,7 @@ function randomise(n,min,max) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 
-    
     return arr.slice(0, n);
 }
 export { randomise };
-//console.log(randomise(7,5,50));
+

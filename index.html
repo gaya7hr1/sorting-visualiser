@@ -15,20 +15,39 @@
     </div>
     <div class="menu-container">
         <div class="controls">
+            
             <label for="size-slider">Array Size: <span id="size-value">15</span></label>
-        
             <input type="range" id="size-slider" min="3" max="30" value="15">
             <label>Min:</label>
             <input type="number" id="min-input" value="5">
             
             <label>Max:</label>
             <input type="number" id="max-input" value="50">
+            <label for="algo-select">Choose a algorithm:</label>
+
+            <select name="algorithms" id="algo-select">
+            <option value="">--Please choose an option--</option>
+            <option value="bubble">bubble sort</option>
+            <option value="selection">selection sort</option>
+            <option value="insertion">insertion sort</option>
+            <option value="quick">quick sort</option>
+            <option value="merge">merge sort</option>
+            <option value="heap">heap sort</option>
+            <option value="count">counting sort</option>
+            <option value="radix">radix sort</option>
+            <option value="bucket">bucket sort</option>
+            <option value="shell">shell sort</option>
+            <option value="bogo">bogo sort</option>
+            <option value="permutation">permutation sort</option>
+            </select>
         </div>
+        
         <div class="menu-button">
         <button id="mix-btn">mix up</button>
         <button id="start-btn">Start Sorting</button>
         </div>
     </div>
+ 
     <div id="graph-container">
         
 

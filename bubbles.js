@@ -1,7 +1,5 @@
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
-const container = document.getElementById('graph-container');
 const bars = document.getElementsByClassName('bar');
 
 
@@ -31,7 +29,7 @@ async function bubbleSort(arr) {
       bars[j].classList.remove('active');
       bars[j + 1].classList.remove('selected');
     }
-    console.log(sortedArr);
+    
     
   }
   return sortedArr;

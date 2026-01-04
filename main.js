@@ -1,13 +1,14 @@
 import { randomise } from "./randomise.js";
 import { bubbleSort } from "./bubbles.js";
 import { renderChart } from "./graphGen.js";
-
+import {insertionSort} from "./insertion.js";
 
 const startBtn = document.getElementById('start-btn');
 const sizeSlider = document.getElementById('size-slider');
 const minInput = document.getElementById('min-input');
 const maxInput = document.getElementById('max-input');
 const sizeDisplay = document.getElementById('size-value');
+const algo= document.getElementById('algo-select')
 const mixBtn = document.getElementById('mix-btn');
 sizeSlider.addEventListener('input', () => {
     sizeDisplay.textContent = sizeSlider.value;
@@ -32,7 +33,18 @@ startBtn.addEventListener('click', () => {
   
     renderChart(arr);
     console.log(arr);
+    if (algo.value=='bubble'){
     setTimeout(() => {
         bubbleSort(arr);
     }, 300); 
+    }
+    else if(algo.value=='insertion'){
+        setTimeout(()=>{
+            insertionSort(arr);
+        },300);
+    }
+    else  {
+        alert("Please select an algorithm first!");
+    }
+
 });

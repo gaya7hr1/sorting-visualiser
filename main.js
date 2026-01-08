@@ -2,6 +2,7 @@ import { randomise } from "./randomise.js";
 import { bubbleSort } from "./bubbles.js";
 import { renderChart } from "./graphGen.js";
 import {insertionSort} from "./insertion.js";
+import { selection } from "./selection.js";
 
 const startBtn = document.getElementById('start-btn');
 const sizeSlider = document.getElementById('size-slider');
@@ -42,6 +43,11 @@ startBtn.addEventListener('click', () => {
         setTimeout(()=>{
             insertionSort(arr);
         },300);
+    }
+    else if(algo.value=='selection'){
+        setTimeout(()=>{
+            selection(arr);
+        },300)
     }
     else  {
         alert("Please select an algorithm first!");

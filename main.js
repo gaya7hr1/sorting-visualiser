@@ -3,7 +3,7 @@ import { bubbleSort } from "./bubbles.js";
 import { renderChart } from "./graphGen.js";
 import {insertionSort} from "./insertion.js";
 import { selection } from "./selection.js";
-
+import  {quickSort} from "./quickSort.js";
 const startBtn = document.getElementById('start-btn');
 const sizeSlider = document.getElementById('size-slider');
 const minInput = document.getElementById('min-input');
@@ -47,6 +47,11 @@ startBtn.addEventListener('click', () => {
     else if(algo.value=='selection'){
         setTimeout(()=>{
             selection(arr);
+        },300)
+    }
+    else if(algo.value=='quick'){
+        setTimeout(()=>{
+            quickSort(0,arr.length,arr);
         },300)
     }
     else  {

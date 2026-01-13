@@ -1,8 +1,5 @@
-
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const bars = document.getElementsByClassName('bar');
-
-
 async function bubbleSort(arr) {
   let sortedArr = [...arr];
   
